@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Single-Phase Full-Bridge Inverter with Multi-Stage LC Filtering | Sheikh Saimum Alam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Sheikh Saimum Alam</a>
+    <button class="menu-btn" aria-label="Menu">&#9776;</button>
+    <ul>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#resume">Resume</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#video">Intro Video</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="phead">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html#projects">&larr; All projects</a></div>
+    <span class="pnum" style="color:#7ee4d8">Project B &middot; Page 2</span>
+    <h1>Single-Phase Full-Bridge Inverter with Multi-Stage LC Filtering</h1>
+    <p>A DC-to-AC inverter with a two-stage LC filter to clean up the output waveform.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="meta">
+    <div class="m"><small>Type</small><b>Academic / independent project</b></div>
+    <div class="m"><small>Tools</small><b>Circuit simulation (NI Multisim) and MATLAB</b></div>
+    <div class="m"><small>My role</small><b>Designer and implementer</b></div>
+    <div class="m"><small>Output</small><b>Designed and implemented inverter</b></div>
+  </div>
+</div>
+
+<section style="padding-top:36px">
+  <div class="wrap prose">
+    <h2>Overview</h2>
+    <p>I designed and implemented a single-phase full-bridge inverter. A multi-stage LC filter sits between the bridge and the load to turn the switched output into a clean AC waveform.</p>
+    <h2>Objective</h2>
+    <p>Convert a DC input into a single-phase AC output with low harmonic distortion at the load.</p>
+
+    <figure>
+      <img src="../assets/img/inverter.png" alt="Single-Phase Full-Bridge Inverter with Multi-Stage LC Filtering diagram">
+      <figcaption>Figure 1. Block diagram: DC source, full bridge, two LC filter stages and load.</figcaption>
+    </figure>
+
+    <h2>Thought Process and Decisions</h2>
+    <ol class="steps">
+      <li><b>Pick the topology.</b> A full bridge uses four switches and gives a full-amplitude AC swing from a single DC source, which suits a single-phase output.</li>
+      <li><b>Choose the switching scheme.</b> The four switches are driven in pairs so that the bridge output alternates polarity at the target frequency.</li>
+      <li><b>Design the filter.</b> The bridge output contains switching harmonics. An LC filter removes them, and using more than one stage lowers the distortion further than a single stage with the same total size.</li>
+      <li><b>Simulate before building.</b> I simulated the circuit first to check the waveform and the filter response, and to catch mistakes before using real components.</li>
+      <li><b>Implement and test.</b> I then implemented the inverter and compared the output with the simulation.</li>
+    </ol>
+
+    <h2>Results and Evidence</h2>
+    <p>Screenshots, waveforms and test results for this project:</p>
+    <div class="slots">
+      <figure class="res" style="margin:0">
+        <img src="../assets/img/results/inverter-schematic.png" alt="Circuit schematic" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <div class="slot" style="display:none"><b>Circuit schematic</b>Add your image as <code>assets/img/results/inverter-schematic.png</code> and it appears here automatically.</div>
+      </figure>
+      <figure class="res" style="margin:0">
+        <img src="../assets/img/results/inverter-waveforms.png" alt="Output waveform before and after filtering" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <div class="slot" style="display:none"><b>Output waveform before and after filtering</b>Add your image as <code>assets/img/results/inverter-waveforms.png</code> and it appears here automatically.</div>
+      </figure>
+    </div>
+
+    <h2>My Contribution</h2>
+    <p>I was responsible for the design and simulation work described above: choosing the architecture, making the design decisions, building the model and evaluating the results.</p>
+    <h2>Skills Demonstrated</h2>
+    <ul class="chips">
+      <li class="chip">Power electronics</li>
+      <li class="chip">Filter design</li>
+      <li class="chip">Circuit simulation</li>
+      <li class="chip">Hardware implementation</li>
+    </ul>
+
+    <div class="pnav">
+      <a class="btn" href="microgrid.html">&larr; Renewable Micro Grid</a>
+      <a class="btn" href="antenna.html">Ultra-Wideband (UWB) Biconical Antenna &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; <span id="year">2026</span> Sheikh Saimum Alam &middot; EEE E-Portfolio</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

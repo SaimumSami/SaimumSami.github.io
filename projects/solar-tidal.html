@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hybrid Solar–Tidal Energy Microgrid | Sheikh Saimum Alam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Sheikh Saimum Alam</a>
+    <button class="menu-btn" aria-label="Menu">&#9776;</button>
+    <ul>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#resume">Resume</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#video">Intro Video</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="phead">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html#projects">&larr; All projects</a></div>
+    <span class="pnum" style="color:#7ee4d8">Project D &middot; Page 4</span>
+    <h1>Hybrid Solar–Tidal Energy Microgrid</h1>
+    <p>A proposal for rural electrification in coastal Bangladesh, modelled in MATLAB/Simulink.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="meta">
+    <div class="m"><small>Type</small><b>Research / proposal</b></div>
+    <div class="m"><small>Tools</small><b>MATLAB / Simulink</b></div>
+    <div class="m"><small>My role</small><b>Proposal and system modelling</b></div>
+    <div class="m"><small>Output</small><b>Hybrid system proposal and model</b></div>
+  </div>
+</div>
+
+<section style="padding-top:36px">
+  <div class="wrap prose">
+    <h2>Overview</h2>
+    <p>Many rural coastal communities in Bangladesh have limited grid access. I proposed a hybrid microgrid that combines solar PV with tidal energy, with a battery to balance the two.</p>
+    <h2>Objective</h2>
+    <p>Provide dependable electricity to a coastal village by combining two renewable sources that peak at different times.</p>
+
+    <figure>
+      <img src="../assets/img/solar_tidal.png" alt="Hybrid Solar–Tidal Energy Microgrid diagram">
+      <figcaption>Figure 1. Proposed hybrid microgrid: solar PV and tidal turbine feeding a common DC bus.</figcaption>
+    </figure>
+
+    <h2>Thought Process and Decisions</h2>
+    <ol class="steps">
+      <li><b>Understand the need.</b> I started from the problem: reliable power for a rural coastal community, where extending the main grid is costly.</li>
+      <li><b>Pick complementary sources.</b> Solar produces during the day and tides follow the lunar cycle, so together they cover more hours than either alone.</li>
+      <li><b>Design the architecture.</b> Both sources feed a common DC bus through their own converter (DC-DC for PV, AC-DC for the turbine). A battery on the bus covers gaps, and an inverter supplies the village load.</li>
+      <li><b>Model in Simulink.</b> I modelled each subsystem and connected them to study how the whole system performs.</li>
+      <li><b>Assess performance.</b> I looked at power balance and how much the battery needs to supply, to judge whether the hybrid approach is practical.</li>
+    </ol>
+
+    <h2>Results and Evidence</h2>
+    <p>Screenshots, waveforms and test results for this project:</p>
+    <div class="slots">
+      <figure class="res" style="margin:0">
+        <img src="../assets/img/results/solartidal-model.png" alt="Simulink system model" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <div class="slot" style="display:none"><b>Simulink system model</b>Add your image as <code>assets/img/results/solartidal-model.png</code> and it appears here automatically.</div>
+      </figure>
+      <figure class="res" style="margin:0">
+        <img src="../assets/img/results/solartidal-results.png" alt="Power output of solar, tidal and load" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <div class="slot" style="display:none"><b>Power output of solar, tidal and load</b>Add your image as <code>assets/img/results/solartidal-results.png</code> and it appears here automatically.</div>
+      </figure>
+    </div>
+
+    <h2>My Contribution</h2>
+    <p>I was responsible for the design and simulation work described above: choosing the architecture, making the design decisions, building the model and evaluating the results.</p>
+    <h2>Skills Demonstrated</h2>
+    <ul class="chips">
+      <li class="chip">Renewable energy integration</li>
+      <li class="chip">System modelling</li>
+      <li class="chip">Rural electrification</li>
+      <li class="chip">MATLAB / Simulink</li>
+    </ul>
+
+    <div class="pnav">
+      <a class="btn" href="antenna.html">&larr; Ultra-Wideband (UWB) Biconical Antenna</a>
+      <a class="btn" href="../index.html#contact">Contact me &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; <span id="year">2026</span> Sheikh Saimum Alam &middot; EEE E-Portfolio</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
